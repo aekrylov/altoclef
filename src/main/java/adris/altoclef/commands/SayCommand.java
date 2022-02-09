@@ -9,6 +9,7 @@ import adris.altoclef.ui.MessagePriority;
 
 public class SayCommand extends Command {
     public SayCommand() throws CommandException {
+        //todo maybe use some kind of vararg to allow not escaping the message if it contains spaces
         super("say", "Writes to chat", new Arg(String.class, "message", null, 0));
     }
 
